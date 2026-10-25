@@ -23,6 +23,7 @@ def main() -> None:
         model=MODEL_NAME,
         api_key=os.environ["OPENROUTER_API_KEY"],
         base_url="https://openrouter.ai/api/v1",
+        max_tokens=4000,
     )
     agent = create_agent(
         model=model,
